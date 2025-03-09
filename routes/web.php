@@ -1,18 +1,15 @@
 <?php
 
+use App\Jobs\processSecondTask;
+use App\Jobs\processTask;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Bus;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/", function () {
+    Bus::batch([
+        new processTask(),
+        new processSecondTask(),
+    ])->dispatch();
+
+    return view("welcome");
 });
-Route::get('/test1', function() {
-    return 'Welcome';
-});
-
-Route::get('/test2/{id}', function($id) {
-    return $id;
-}) ->name ('a');
-
-Route::get('/test3/{id?}', function() {
-    return 'Welcome';
-}) -> name ('b');
