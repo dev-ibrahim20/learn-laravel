@@ -13,7 +13,7 @@
         "laravel/framework": "^11.31",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
-        "nwidart/laravel-modules": "*"
+        "nwidart/laravel-modules": "12.0.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -29,7 +29,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Modules\\Blog\\app\\": "Modules/Blog/app/"
+            "Modules\\": "Modules/"
         }
     },
     "autoload-dev": {

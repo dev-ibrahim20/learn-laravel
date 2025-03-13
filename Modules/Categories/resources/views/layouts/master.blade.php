@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Blog Module - {{ config('app.name', 'Laravel') }}</title>
+    <title>Categories Module - {{ config('app.name', 'Laravel') }}</title>
 
     <meta name="description" content="{{ $description ?? '' }}">
     <meta name="keywords" content="{{ $keywords ?? '' }}">
@@ -18,12 +18,12 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     {{-- Vite CSS --}}
-    {{-- {{ module_vite('build-blog', 'resources/assets/sass/app.scss', storage_path('vite.hot')) }} --}}
+    {{-- {{ module_vite('build-categories', 'resources/assets/sass/app.scss', storage_path('vite.hot')) }} --}}
 </head>
 
 <body>
     @yield('content')
 
     {{-- Vite JS --}}
-    {{-- {{ module_vite('build-blog', 'resources/assets/js/app.js', storage_path('vite.hot')) }} --}}
+    {{-- {{ module_vite('build-categories', 'resources/assets/js/app.js', storage_path('vite.hot')) }} --}}
 </body>

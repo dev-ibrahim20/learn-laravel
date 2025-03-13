@@ -1,3 +1,5 @@
 {
-    "Blog": true
+    "Blog": true,
+    "Users": true,
+    "Categories": true
 }

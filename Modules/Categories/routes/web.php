@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Blog\Http\Controllers\BlogController;
+use Modules\Categories\Http\Controllers\CategoriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +15,5 @@ use Modules\Blog\Http\Controllers\BlogController;
 */
 
 Route::group([], function () {
-    Route::resource('blog', BlogController::class)->names('blog');
+    Route::resource('categories', CategoriesController::class)->names('categories');
 });

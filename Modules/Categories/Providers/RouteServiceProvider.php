@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Blog\Providers;
+namespace Modules\Categories\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
 {
-    protected string $name = 'Blog';
+    protected string $name = 'Categories';
 
     /**
      * Called before routes are registered.

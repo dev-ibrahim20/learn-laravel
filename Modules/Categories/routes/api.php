@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Modules\Blog\Http\Controllers\BlogController;
+use Modules\Categories\Http\Controllers\CategoriesController;
 
 /*
  *--------------------------------------------------------------------------
@@ -15,5 +15,8 @@ use Modules\Blog\Http\Controllers\BlogController;
 */
 
 Route::middleware(['auth:sanctum'])->prefix('v1')->group(function () {
-    Route::apiResource('blog', BlogController::class)->names('blog');
+    Route::apiResource('categories', CategoriesController::class)->names('categories');
+});
+
+Route::middleware(['auth:sanctum'])->prefix('v1')->group(function () {
 });

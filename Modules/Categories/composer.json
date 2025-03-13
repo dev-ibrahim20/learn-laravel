@@ -1,5 +1,5 @@
 {
-    "name": "nwidart/blog",
+    "name": "nwidart/categories",
     "description": "",
     "authors": [
         {
@@ -17,14 +17,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Blog\\": "app/",
-            "Modules\\Blog\\Database\\Factories\\": "database/factories/",
-            "Modules\\Blog\\Database\\Seeders\\": "database/seeders/"
+            "Modules\\Categories\\": "app/",
+            "Modules\\Categories\\Database\\Factories\\": "database/factories/",
+            "Modules\\Categories\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Modules\\Blog\\Tests\\": "tests/"
+            "Modules\\Categories\\Tests\\": "tests/"
         }
     }
 }
